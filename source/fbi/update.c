@@ -18,7 +18,7 @@ static void update_check_update(ui_view* view, void* data, float* progress, char
     Result res = 0;
 
     json_t* json = NULL;
-    if(R_SUCCEEDED(res = http_download_json("https://api.github.com/repos/nh-server/FBI-NH/releases/latest", &json, 16 * 1024))) {
+    if(R_SUCCEEDED(res = http_download_json("https://api.github.com/repos/morrisonion/FBI-MO/releases/latest", &json, 16 * 1024))) {
         if(json_is_object(json)) {
             json_t* name = json_object_get(json, "name");
             json_t* assets = json_object_get(json, "assets");
@@ -66,7 +66,7 @@ static void update_check_update(ui_view* view, void* data, float* progress, char
     info_destroy(view);
 
     if(hasUpdate) {
-        action_install_url("Update FBI-NH to the latest version?", updateURL, fs_get_3dsx_path(), NULL, NULL, NULL, NULL);
+        action_install_url("Update FBI-MO to the latest version?", updateURL, fs_get_3dsx_path(), NULL, NULL, NULL, NULL);
     } else {
         if(R_FAILED(res)) {
             error_display_res(NULL, NULL, res, "Failed to check for update.");
