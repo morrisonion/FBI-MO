@@ -1,6 +1,13 @@
-# FBI-NH
+# FBI-MO
 
-FBI-NH is an open source title manager for the 3DS. FBI was originally authored by Steveice10.
+FBI-MO is an open source title manager for the 3DS. FBI(NH) was originally authored by Steveice10 and Nintendo Homebrew.
+
+# MO-Update
+
+*The MO update makes it compatible to compile with the latest libctru version
+*Changes the accent color to a beautiful dark-green
+
+# Building
 
 Requires [devkitARM](https://devkitpro.org/wiki/Getting_Started), along with 3ds-curl, 3ds-zlib, and 3ds-jansson from the devkitPro pacman repository, to build.
 
@@ -21,7 +28,7 @@ Requires [devkitARM](https://devkitpro.org/wiki/Getting_Started), along with 3ds
 
 # Credit
 
-Original author: Steveice10
+Original author: Steveice10, Nintendo Homebrew
 
 Banner: Originally created by [OctopusRift](https://gbatemp.net/members/octopusrift.356526/), touched up by [Apache Thunder](https://gbatemp.net/members/apache-thunder.105648/), updated for new logo by [PabloMK7](https://gbatemp.net/members/pablomk7.345712/).
 
