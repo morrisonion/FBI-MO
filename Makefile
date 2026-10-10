@@ -60,7 +60,7 @@ ICON := meta/icon_3ds.png
 PRODUCT_CODE := CTR-P-CFBI
 UNIQUE_ID := 0xF8001
 BANNER_AUDIO := $(TOPDIR)/meta/audio_3ds.wav
-BANNER_IMAGE := $(TOPDIR)/meta/banner_3ds.cgfx
+BANNER_IMAGE := $(TOPDIR)/meta/banner_3ds.png
 
 ZSTD_DIR  		:= $(CURDIR)/externals/zstd
 ZSTD_OUT  		?= $(CURDIR)/$(BUILD)/zstd
