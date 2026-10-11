@@ -60,7 +60,7 @@ ICON := meta/icon_3ds.png
 PRODUCT_CODE := CTR-P-CFBI
 UNIQUE_ID := 0xF8001
 BANNER_AUDIO := $(TOPDIR)/meta/audio_3ds.wav
-BANNER_IMAGE := $(TOPDIR)/meta/banner_3ds.png
+BANNER_IMAGE := $(TOPDIR)/meta/banner_3ds_2_patched.cgfx
 
 ZSTD_DIR  		:= $(CURDIR)/externals/zstd
 ZSTD_OUT  		?= $(CURDIR)/$(BUILD)/zstd
@@ -242,7 +242,7 @@ else
 # main targets
 #---------------------------------------------------------------------------------
 $(OUTPUT).cia	:	$(OUTPUT).3dsx
-	@bannertool makebanner -i $(BANNER_IMAGE) -a $(BANNER_AUDIO) -o "banner.bin"
+	@bannertool makebanner -ci $(BANNER_IMAGE) -a $(BANNER_AUDIO) -o "banner.bin"
 	@makerom -f cia -o $@ -target t -elf $(OUTPUT).elf -rsf $(TOPDIR)/build-cia.rsf -exefslogo -icon $(OUTPUT).smdh -banner "banner.bin" -logo $(TOPDIR)/meta/logo_3ds.bcma.lz -DAPP_ROMFS="$(TOPDIR)/$(ROMFS)" -major $(VERSION_MAJOR) -minor $(VERSION_MINOR) -micro $(VERSION_MICRO) -DAPP_VERSION_MAJOR="$(VERSION_MAJOR)"
 
 $(OUTPUT).3dsx	:	$(OUTPUT).elf $(_3DSXDEPS)
