@@ -6,6 +6,7 @@ FBI-MO is an open source title manager for the 3DS. FBI(NH) was originally autho
 
 * The MO update makes it compatible to compile with the latest libctru version
 * Changes the accent color to a beautiful dark-green
+* +more features in future updates
 
 # Building
 
