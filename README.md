@@ -31,8 +31,6 @@ Requires [devkitARM](https://devkitpro.org/wiki/Getting_Started), along with 3ds
 
 Original author: Steveice10, Nintendo Homebrew
 
-Banner: Originally created by [OctopusRift](https://gbatemp.net/members/octopusrift.356526/), touched up by [Apache Thunder](https://gbatemp.net/members/apache-thunder.105648/), updated for new logo by [PabloMK7](https://gbatemp.net/members/pablomk7.345712/).
-
-Logo: [PabloMK7](https://gbatemp.net/members/pablomk7.345712/)
+Banner: Originally created by [OctopusRift](https://gbatemp.net/members/octopusrift.356526/), touched up by [Apache Thunder](https://gbatemp.net/members/apache-thunder.105648/), updated for new logo by [PabloMK7](https://gbatemp.net/members/pablomk7.345712/), updated by me(morrisonion).
 
 SPI Protocol Information: [TuxSH](https://github.com/TuxSH/) ([TWLSaveTool](https://github.com/TuxSH/TWLSaveTool))
