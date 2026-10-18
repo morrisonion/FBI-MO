@@ -14,5 +14,5 @@ void pendingtitles_open();
 void remoteinstall_open();
 void systemsavedata_open();
 void tickets_open();
+void themestore_open();
 void titles_open();
-void update_open();

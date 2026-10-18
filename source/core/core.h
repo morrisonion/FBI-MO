@@ -10,6 +10,7 @@
 #include "fs.h"
 #include "http.h"
 #include "linkedlist.h"
+#include "motheme.h"
 #include "screen.h"
 #include "spi.h"
 #include "stringutil.h"

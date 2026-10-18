@@ -376,6 +376,43 @@ void screen_load_texture_file(u32 id, FILE* fd, bool linearFilter) {
     free(image);
 }
 
+bool screen_load_texture_memory(u32 id, const void* data, u32 size, bool linearFilter) {
+    if(id >= MAX_TEXTURES) {
+        return false;
+    }
+
+    int width;
+    int height;
+    int depth;
+    u8* image = stbi_load_from_memory((const stbi_uc*) data, (int) size, &width, &height, &depth, STBI_rgb_alpha);
+    if(image == NULL) {
+        return false;
+    }
+
+    if(width > 1024 || height > 1024) {
+        free(image);
+        return false;
+    }
+
+    for(int i = 0; i < width * height; i++) {
+        u8* px = &image[i * 4];
+        u8 c1 = px[0];
+        u8 c2 = px[1];
+        u8 c3 = px[2];
+        u8 c4 = px[3];
+
+        px[0] = c4;
+        px[1] = c3;
+        px[2] = c2;
+        px[3] = c1;
+    }
+
+    screen_load_texture_untiled(id, image, (u32) (width * height * 4), (u32) width, (u32) height, GPU_RGBA8, linearFilter);
+
+    free(image);
+    return true;
+}
+
 void screen_unload_texture(u32 id) {
     if(id >= MAX_TEXTURES) {
         error_panic("Attempted to unload invalid texture ID \"%lu\".", id);

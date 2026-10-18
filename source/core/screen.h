@@ -21,6 +21,7 @@ u32 screen_allocate_free_texture();
 void screen_load_texture_untiled(u32 id, void* data, u32 size, u32 width, u32 height, GPU_TEXCOLOR format, bool linearFilter);
 void screen_load_texture_path(u32 id, const char* path, bool linearFilter);
 void screen_load_texture_file(u32 id, FILE* fd, bool linearFilter);
+bool screen_load_texture_memory(u32 id, const void* data, u32 size, bool linearFilter);
 void screen_load_texture_tiled(u32 id, void* data, u32 size, u32 width, u32 height, GPU_TEXCOLOR format, bool linearFilter);
 void screen_unload_texture(u32 id);
 void screen_get_texture_size(u32* width, u32* height, u32 id);

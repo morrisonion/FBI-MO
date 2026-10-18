@@ -12,9 +12,7 @@
 #include "http.h"
 #include "stringutil.h"
 
-#define MAKE_HTTP_USER_AGENT_(major, minor, micro) ("Mozilla/5.0 (Nintendo 3DS; Mobile; rv:10.0) Gecko/20100101 FBI-MO/" #major "." #minor "." #micro)
-#define MAKE_HTTP_USER_AGENT(major, minor, micro) MAKE_HTTP_USER_AGENT_(major, minor, micro)
-#define HTTP_USER_AGENT MAKE_HTTP_USER_AGENT(VERSION_MAJOR, VERSION_MINOR, VERSION_MICRO)
+#define HTTP_USER_AGENT "Mozilla/5.0 (Nintendo 3DS; Mobile; rv:10.0) Gecko/20100101 FBI-MO"
 
 #define HTTP_MAX_REDIRECTS 50
 #define HTTP_TIMEOUT_SEC 15
