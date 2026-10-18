@@ -2,6 +2,9 @@
 
 FBI-MO is an open source title manager for the 3DS. FBI(NH) was originally authored by Steveice10 and Nintendo Homebrew.
 
+[![Downloads](https://img.shields.io/github/downloads/morrisonion/FBI-MO/total.svg?color=849B54&labelColor=555555)](https://github.com/morrisonion/FBI-MO/releases)
+
+
 # MO-Update
 
 * The MO update makes it compatible to compile with the latest libctru version
